@@ -1,6 +1,9 @@
 /*Третя секція "Чим ми займаємось"*/
 .works {
     background-color: var(--white-color);
+    @media screen and (max-width:1599.9px) {
+      display: none;
+    }
   }
   .text-portfolio-mail {
     margin-bottom: 50px;
