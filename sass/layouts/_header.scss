@@ -32,10 +32,9 @@
     &__menu-nav {
       list-style-type: none;
       display: flex;
+      gap: 50px;
     }
-    &__item-nav:not(:last-child) {
-      margin-right: 50px;
-    }
+    
     &__link-nav {
     position: relative;
     display: block;
@@ -68,10 +67,9 @@
       align-items: center;
       margin-left: auto;
       list-style-type: none;
+      gap: 50px;
     }
-    &__item-contacts:not(:first-child) {
-      margin-left: 50px;
-    }
+    
     &__icon {
       box-sizing: border-box;
       fill: currentColor;

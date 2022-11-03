@@ -17,11 +17,11 @@
   .item-clients {
     list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 30px;
+    
   }
   
   .list-clients {
-    margin-right: 30px;
     width: 170px;
     height: 92px;
     align-items: center;

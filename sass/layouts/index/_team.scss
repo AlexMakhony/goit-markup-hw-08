@@ -3,7 +3,7 @@
     background-color: var(--our-team-bg);
     &-menu {
       display: flex;
-      justify-content: space-between;
+      gap: 30px;
       list-style-type: none;
     }
     &-members {
