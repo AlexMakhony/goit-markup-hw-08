@@ -1,0 +1,24 @@
+.body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    background-color: var(--white-color);
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-portfolio {
+    /* В макете нет верхнего падинга поэтому обнуляем */
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+  .conteiner {
+    /* outline: 2px solid tomato; */
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
