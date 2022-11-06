@@ -1,35 +1,50 @@
 /*Перша секція "замовити послугу"*/
 
 .try-us-hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    /* outline: 2px solid red; */
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
     background-size: cover;
     background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/HW4/heroimg.jpg);
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/HW4/heroimg.jpg);
     background-color: var(--button-portfolio-color); 
   }
-  
+  .tryheader {
+    padding: 118px 60px;
+    @include tablet {
+      padding: 118px 204px;
+    }
+    @include desktop {
+      padding: 200px 452px;
+    }
+  }
   .hero-header-class {
-    margin-left: 235px;
-    margin-right: 235px;
-    margin-top: 0;
-    margin-bottom: 30px;
+    font-style: normal;
+    margin-bottom: 40px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--white-color);
     text-transform: uppercase;
-  
-    /* outline: 2px solid tomato; */
+    color: var(--white-color);
+
+    // @include desktop { 
+    // margin-left: 235px;
+    // margin-right: 235px;
+    // margin-top: 0;
+    // margin-bottom: 30px;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    // text-align: center;
+    // letter-spacing: 0.06em;
+    // color: var(--white-color);
+    // text-transform: uppercase;
+    // }
+    
   }
   .try-button {
     display: block;

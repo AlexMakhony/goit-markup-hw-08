@@ -65,7 +65,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1200px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -95,7 +95,7 @@ img {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .conteiner {
     width: 1170px;
   }
@@ -194,30 +194,37 @@ img {
 
 /*Перша секція "замовити послугу"*/
 .try-us-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  /* outline: 2px solid red; */
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
   background-size: cover;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/HW4/heroimg.jpg);
   background-color: var(--button-portfolio-color);
 }
 
+.tryheader {
+  padding: 118px 60px;
+}
+@media screen and (min-width: 768px) {
+  .tryheader {
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tryheader {
+    padding: 200px 452px;
+  }
+}
+
 .hero-header-class {
-  margin-left: 235px;
-  margin-right: 235px;
-  margin-top: 0;
-  margin-bottom: 30px;
+  font-style: normal;
+  margin-bottom: 40px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-color);
   text-transform: uppercase;
-  /* outline: 2px solid tomato; */
+  color: var(--white-color);
 }
 
 .try-button {
@@ -269,7 +276,7 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .bests-list {
     width: calc((100% - 90px) / 4);
   }
@@ -301,7 +308,7 @@ img {
 .works {
   background-color: var(--white-color);
 }
-@media screen and (max-width: 1599.9px) {
+@media screen and (max-width: 1200px) {
   .works {
     display: none;
   }
@@ -369,7 +376,7 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team-members {
     width: calc((100% - 90px) / 4);
   }
@@ -432,6 +439,14 @@ img {
   fill: var(--white-color);
 }
 
+.text-portfolio-mail.teamcolor {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* NEW section CLIENTS */
 .text-clients {
   display: block;
@@ -460,7 +475,7 @@ img {
     width: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .list-clients {
     width: calc((100% - 150px) / 6);
   }

@@ -13,10 +13,10 @@
       box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
       width: 100%;
-      @media screen and (min-width:768px) {
+      @include tablet {
         width: calc((100% - 30px) / 2);
       }
-      @media screen and (min-width:1600px) {
+      @include desktop {
         width: calc((100% - 90px) / 4);
       }
     }
@@ -80,3 +80,11 @@
   // .teampicture {
   //   width: 100%;
   // }
+
+  .text-portfolio-mail.teamcolor {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
