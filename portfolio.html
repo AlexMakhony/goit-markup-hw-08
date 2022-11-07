@@ -18,8 +18,8 @@
     <title>Portfolio</title>
   </head>
   <body class="body">
-    <!--Header-->
-    <!-- <header class="header">
+    <!-- Header-->
+    <header class="header">
       <div class="header__container conteiner">
         <nav class="header__nav">
           <a class="header__link-logo" href="./index.html" lang="en">
@@ -62,15 +62,16 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!--Main-->
     <main>
       <!--UL з кнопками-->
       <section class="main-section">
         <div class="conteiner">
           <h1 hidden>Large section</h1>
-          <!-- <ul class="buttons-menu">
-            <li><button type="button" class="button-portfolio">Усі</button></li>
+          <ul class="buttons-menu">
+            <li>
+              <button type="button" class="button-portfolio">Усі</button></li>
             <li>
               <button type="button" class="button-portfolio">Веб-сайти</button>
             </li>
@@ -85,19 +86,33 @@
                 Маркетинг
               </button>
             </li>
-          </ul> -->
-          <!--UL з картинками-->
+          </ul> 
+          <!-- UL з картинками -->
           <ul class="pictures-list">
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
-                <img 
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/mac.jpg 1x, ./img/Pageportfolio/mac_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/mac_tab.jpg 1x, ./img/Pageportfolio/mac_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/mac_mob.jpg 1x, ./img/Pageportfolio/mac_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                  <img 
                   class="img-portfolio"
                   src="./img/Pageportfolio/mac.jpg"
                   alt="Макбук"
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -109,13 +124,27 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
-                <img
-                  class="img-portfolio"
-                  src="./img/Pageportfolio/basketball.jpg"
-                  alt="Баскетбол"
-                  width="370"
-                  height="294"
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/basketball.jpg 1x, ./img/Pageportfolio/basketball_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/basketball_tab.jpg 1x, ./img/Pageportfolio/basketball_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/basketball_mob.jpg 1x, ./img/Pageportfolio/basketball_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="img-portfolio"
+                      src="./img/Pageportfolio/basketball.jpg"
+                      alt="Баскетбол"
+                      width="370"
+                      height="294"
                 />
+                </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -129,6 +158,19 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/fish.jpg 1x, ./img/Pageportfolio/fish_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/fish_tab.jpg 1x, ./img/Pageportfolio/fish_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/fish_mob.jpg 1x, ./img/Pageportfolio/fish_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
                   src="./img/Pageportfolio/fish.jpg"
@@ -136,6 +178,7 @@
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -149,6 +192,19 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/headphone.jpg 1x, ./img/Pageportfolio/headphone_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/headphone_tab.jpg 1x, ./img/Pageportfolio/headphone_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/headphone_mob.jpg 1x, ./img/Pageportfolio/headphone_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
                   src="./img/Pageportfolio/headphone.jpg"
@@ -156,6 +212,7 @@
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -169,13 +226,27 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/box.jpg 1x, ./img/Pageportfolio/box_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/box_tab.jpg 1x, ./img/Pageportfolio/box_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/box_mob.jpg 1x, ./img/Pageportfolio/box_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
-                  src="img/Pageportfolio/box.jpg"
+                  src="./img/Pageportfolio/box.jpg"
                   alt="Коробки"
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -189,6 +260,19 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/monitor.jpg 1x, ./img/Pageportfolio/monitor_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/monitor_tab.jpg 1x, ./img/Pageportfolio/monitor_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/monitor_mob.jpg 1x, ./img/Pageportfolio/monitor_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
                   src="./img/Pageportfolio/monitor.jpg"
@@ -196,6 +280,7 @@
                   width="370"
                   height="294"
                 />
+                  </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -209,6 +294,19 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/journal.jpg 1x, ./img/Pageportfolio/journal_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/journal_tab.jpg 1x, ./img/Pageportfolio/journal_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/journal_mob.jpg 1x, ./img/Pageportfolio/journal_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
                   src="./img/Pageportfolio/journal.jpg"
@@ -216,6 +314,7 @@
                   width="370"
                   height="294"
                 />
+                  </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -229,6 +328,19 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/birka.jpg 1x, ./img/Pageportfolio/birka_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/birka_tab.jpg 1x, ./img/Pageportfolio/birka_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/birka_mob.jpg 1x, ./img/Pageportfolio/birka_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
                   src="./img/Pageportfolio/birka.jpg"
@@ -236,6 +348,7 @@
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
@@ -249,6 +362,19 @@
             <li class="lists-blocks">
               <a class="link-blocks">
                 <div class="overlay-relativ">
+                  <picture>
+                    <source 
+                      srcset="./img/Pageportfolio/notebook.jpg 1x, ./img/Pageportfolio/notebook_2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                      />
+                    <source
+                      srcset="./img/Pageportfolio/notebook_tab.jpg 1x, ./img/Pageportfolio/notebook_tab_2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/Pageportfolio/notebook_mob.jpg 1x, ./img/Pageportfolio/notebook_mob_2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
                 <img
                   class="img-portfolio"
                   src="./img/Pageportfolio/notebook.jpg"
@@ -256,6 +382,7 @@
                   width="370"
                   height="294"
                 />
+                  </picture>
                 <p class="text-overlay-portfolio">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="options-discription">
