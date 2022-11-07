@@ -214,12 +214,19 @@
           <ul class="menu-portfolio">
             <li class="menu-portfolio-list">
               <div class="menu-portfolio-box">
-                <img
-                src="./img/Portfolio/coding.jpg"
-                alt="розробка"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                  srcset="./img/Portfolio/coding.jpg 1x,
+                  ./img/Portfolio/coding_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <img
+                  src="./img/Portfolio/coding.jpg"
+                  alt="розробка"
+                  width="370"
+                  height="294"
+                />
+                </picture>
                 <p class="portfolio-options">
                   Десктопні додатки
                 </p>
@@ -227,12 +234,19 @@
             </li>
             <li class="menu-portfolio-list">
               <div class="menu-portfolio-box">
+                <picture>
+                  <source
+                  srcset="./img/Portfolio/mobile.jpg 1x,
+                  ./img/Portfolio/mobile_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
                 <img
                 src="./img/Portfolio/mobile.jpg"
                 alt="мобіліті"
                 width="370"
                 height="294"
               />
+              </picture>  
                 <p class="portfolio-options">
                   Мобільні додатки
                 </p>
@@ -240,12 +254,19 @@
             </li>
             <li class="menu-portfolio-list">
               <div class="menu-portfolio-box">
+                <picture>
+                  <source
+                  srcset="./img/Portfolio/graphic.jpg 1x,
+                  ./img/Portfolio/graphic_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
                 <img
                 src="./img/Portfolio/graphic.jpg"
                 alt="графіка"
                 width="370"
                 height="294"
               />
+              </picture>
                 <p class="portfolio-options">
                   Дизайнерські рішення
                 </p>
@@ -257,15 +278,28 @@
       <!--Четверт секція "Наша команда"-->
       <section class="team section">
         <div class="conteiner">
-          <h2 class="text-portfolio-mail teamcolor">Наша команда</h2>
+          <h2 class="team-title">Наша команда</h2>
           <ul class="team-menu">
             <li class="team-members">
-              <img
+              <picture>
+                <source 
+                  srcset="./img/Team/demyanenko.jpg 1x, ./img/Team/demyanenko_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./img/Team/demyanenko_tab.jpg 1x, ./img/Team/demyanenko_tab_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/Team/demyanenko_mob.jpg 1x, ./img/Team/demyanenko_mob_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
                 class="teampicture"
                 src="./img/Team/demyanenko.jpg"
                 alt="demyanenko"
-                
-              />
+                />
+              </picture>
               <div class="team-discription">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-profession">Product Designer</p>
@@ -302,11 +336,25 @@
               </div>
             </li>
             <li class="team-members">
+              <picture>
+                <source 
+                  srcset="./img/Team/repina.jpg 1x, ./img/Team/repina_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./img/Team/repina_tab.jpg 1x, ./img/Team/repina_tab_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/Team/repina_mob.jpg 1x, ./img/Team/repina_mob_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
               <img
                 class="teampicture"
                 src="./img/Team/repina.jpg"
                 alt="repina"
               />
+              </picture>
               <div class="team-discription">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-profession">Frontend Developer</p>
@@ -343,11 +391,25 @@
               </div>
             </li>
             <li class="team-members">
+              <picture>
+                <source 
+                  srcset="./img/Team/tarasov.jpg 1x, ./img/Team/tarasov_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./img/Team/tarasov_tab.jpg 1x, ./img/Team/tarasov_tab_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/Team/tarasov_mob.jpg 1x, ./img/Team/tarasov_mob_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
               <img
                 class="teampicture"
                 src="./img/Team/tarasov.jpg"
                 alt="tarasov"
               />
+              </picture>
             <div class="team-discription">
               <h3 class="team-name">Микола Тарасов</h3>
               <p lang="en" class="team-profession">Marketing</p>
@@ -384,11 +446,25 @@
             </div>
             </li>
             <li class="team-members">
+              <picture>
+                <source 
+                  srcset="./img/Team/ermakov.jpg 1x, ./img/Team/ermakov_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                <source
+                  srcset="./img/Team/ermakov_tab.jpg 1x, ./img/Team/ermakov_tab_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/Team/ermakov_mob.jpg 1x, ./img/Team/ermakov_mob_2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
               <img
                 class="teampicture"
                 src="./img/Team/ermakov.jpg"
                 alt="ermakov"
               />
+              </picture>
             <div class="team-discription">
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p lang="en" class="team-profession">UI Designer</p>
@@ -484,7 +560,7 @@
     
     <!-- !!!!!!!!!!!   FOOTER ПЕРЕПИСЫВАЕМ ЧЕРЕЗ БЭМ   !!!!!!!!!!!!!!!!!! -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__wraper conteiner ">
         <div class="footer__contacts">
           <a class="footer__logo" href="/." lang="en">
@@ -563,7 +639,7 @@
         </div>
         
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
   </body>
 </html>
