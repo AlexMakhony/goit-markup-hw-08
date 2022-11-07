@@ -57,7 +57,7 @@
   .lists-blocks {
     width: 100%;
     @include tablet {
-      width: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
     }
     @include desktop {
       flex-basis: calc((100% - 60px) / 3);
@@ -119,6 +119,12 @@
     border-right: 1px solid var(--portfolio-border);
     border-bottom: 1px solid var(--portfolio-border);
     border-left: 1px solid var(--portfolio-border);
+  }
+
+  .options-discription.tech {
+    @media screen and (min-width:768px) and (max-width:1200px) {
+      min-height: 147px;
+    }
   }
   .name-picture-section {
     margin-bottom: 4px;

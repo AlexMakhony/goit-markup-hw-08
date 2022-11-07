@@ -64,10 +64,16 @@
     }
     &__menu-contacts {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      margin-left: auto;
       list-style-type: none;
+      margin-left: 70px;
+      gap:10px;
+      @include desktop {
+      margin-left: auto;
+      align-items: center;
       gap: 50px;
+      } 
     }
     
     &__icon {
