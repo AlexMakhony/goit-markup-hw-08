@@ -1,6 +1,8 @@
 a {
+    list-style-type: none;
     cursor: pointer;
     text-decoration: none;
+    
   }
   a:hover {
     text-decoration: none;
@@ -24,6 +26,7 @@ a {
   ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
   }
   
   /* Reset Default img */
