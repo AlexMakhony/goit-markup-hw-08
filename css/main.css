@@ -235,6 +235,7 @@ img {
   padding: 12px 8px;
   border: none;
   background-color: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__button-open:hover {
   fill: var(--blue-color);
@@ -242,6 +243,123 @@ img {
 @media screen and (min-width: 768px) {
   .header__button-open {
     display: none;
+  }
+}
+
+.mob-menu {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 21px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mob-menu__close {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu__close:hover {
+  fill: var(--blue-color);
+}
+
+.conteiner.spc-between {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.adress-menu {
+  margin-top: auto;
+}
+
+.mob__list-top:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob__link-top {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob__link-top:hover {
+  color: var(--blue-color);
+}
+.mob__link-top.current {
+  color: var(--blue-color);
+}
+
+.mob__list-adress:not(:last-child) {
+  margin-bottom: 32px;
+  margin-top: 20px;
+}
+.mob__list-adress:last-child {
+  margin-bottom: 64px;
+}
+
+.mob__link-adress.phone {
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+@media screen and (max-width: 423px) {
+  .mob__link-adress.phone {
+    font-size: 30px;
+  }
+}
+.mob__link-adress.mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mob__list-social:not(:last-child)::after {
+  content: "";
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+.mob__link-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+@media screen and (max-width: 423px) {
+  .mob__link-social {
+    font-size: 14px;
   }
 }
 
