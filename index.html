@@ -181,11 +181,13 @@
                           </svg>
                         </span>
                         
-                        <span class="check-text">Погоджуюся з розсилкою та приймаю</span>
+                        <div class="modal-auth-text">
+                          <span class="check-text">Погоджуюся з розсилкою та приймаю</span>
                         
                         <span class="check-link-wraper">
                           <a href="./index.html" class="check-link">Умови договору</a>
                         </span>
+                        </div>
                         
                       </label>
                   </div>
@@ -609,68 +611,70 @@
 
     <footer class="footer">
       <div class="footer__wraper conteiner ">
-        <div class="footer__contacts">
-          <a class="footer__logo" href="/." lang="en">
-            <span class="footer__logo-web">Web</span
-            ><span class="footer__logo-studio header__logo-studio">Studio</span>
-          </a>
-          <address class="footer__adress">
-            <ul class="footer__list-adress">
-              <li class="footer__item-adress">
-                <a
-                  class="footer__link-adress mailto"
-                  href="https://goo.gl/maps/aKqt5xky7KFVWU1r5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="footer__item-adress">
-                <a class="footer__link-adress" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="footer__item-adress">
-                <a class="footer__link-adress" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer__add">
-          <p class="footer__text-add">приєднуйтесь</p>
-          <ul class="footer__list-add">
-            <li class="footer__item-add">
-              <a href="" class="footer__link-add">
-                <svg class="footer__icon-add" width="20" height="20">
-                  <use href="./img/svg/icons.svg#icon-instagram"></use>
-                </svg>
+          
+            <div class="footer__contacts">
+              <a class="footer__logo" href="/." lang="en">
+                <span class="footer__logo-web">Web</span
+                ><span class="footer__logo-studio header__logo-studio">Studio</span>
               </a>
-            </li>
-            <li class="footer__item-add">
-              <a href="" class="footer__link-add">
-                <svg class="footer__icon-add" width="20" height="20">
-                  <use href="./img/svg/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__item-add">
-              <a href="" class="footer__link-add">
-                <svg class="footer__icon-add" width="20" height="20">
-                  <use href="./img/svg/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__item-add">
-              <a href="" class="footer__link-add">
-                <svg class="footer__icon-add" width="20" height="20">
-                  <use href="./img/svg/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+              <address class="footer__adress">
+                <ul class="footer__list-adress">
+                  <li class="footer__item-adress">
+                    <a
+                      class="footer__link-adress mailto"
+                      href="https://goo.gl/maps/aKqt5xky7KFVWU1r5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="footer__item-adress">
+                    <a class="footer__link-adress" href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="footer__item-adress">
+                    <a class="footer__link-adress" href="tel:+380991111111"
+                      >+38 099 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer__add">
+              <p class="footer__text-add">приєднуйтесь</p>
+              <ul class="footer__list-add">
+                <li class="footer__item-add">
+                  <a href="" class="footer__link-add">
+                    <svg class="footer__icon-add" width="20" height="20">
+                      <use href="./img/svg/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item-add">
+                  <a href="" class="footer__link-add">
+                    <svg class="footer__icon-add" width="20" height="20">
+                      <use href="./img/svg/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item-add">
+                  <a href="" class="footer__link-add">
+                    <svg class="footer__icon-add" width="20" height="20">
+                      <use href="./img/svg/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item-add">
+                  <a href="" class="footer__link-add">
+                    <svg class="footer__icon-add" width="20" height="20">
+                      <use href="./img/svg/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          
+          </div>
         <div class="footer__sign">
             <p class="footer__text-sign">Підпишіться на розсилку</p>
             <form action="#" class="footer__form">
@@ -683,7 +687,6 @@
               </button>
             </form>
         </div>
-        
       </div>
     </footer>
     <script src="./js/modal.js"></script>

@@ -63,11 +63,17 @@
   .footer__contacts {
     display: block;
     margin-bottom: 60px;
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
   
   .footer__add {
     display: block;
     margin-bottom: 60px;
+    @include tablet {
+      margin-bottom: 0;
+    }
     @include desktop {
       margin-left: auto;
       margin-bottom: 0;
@@ -188,6 +194,7 @@
     }
     @include desktop {
       width: 350px;
+      margin-bottom: 0;
     }
   }
   .footer__btn {
