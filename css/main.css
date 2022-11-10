@@ -368,8 +368,8 @@ img {
   background-position: center;
   background-size: cover;
   background-color: var(--button-portfolio-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .try-us-hero {
@@ -388,6 +388,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .try-us-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: var(--hero-grad), url(../img/HW4/heroimg.jpg);
   }
 }
