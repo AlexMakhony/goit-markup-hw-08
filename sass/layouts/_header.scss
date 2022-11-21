@@ -1,241 +1,184 @@
-// Тут попробовал всё привязать к общему блоку
 .header {
-    border-bottom: 1px solid var(--header-border);
-    min-height: 60px;
+  position: relative;
+  width: 100%;
+  background: #01383A;
+  box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: auto;
+  height: 104px;
+    @include mobile {
+      width: 480px;
+  }
+    @include tablet {
+        width: 768px;
+        height: 136px;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-content: baseline;
+    }
     @include desktop {
-      min-height: 80px;
+        width: 1280px;
     }
-    @media screen and (max-width:767px) {
-      display: flex;
-      align-items: center;
+}
+.header__link-logo {
+  text-align: center;
+  color: #fff;
+  width: 115px;
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  text-decoration: none;
+}
+.header__button-open {
+  border: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 0;
+    // ПОМЕНЯЙ СВГ
+    fill: greenyellow;
+    @include desktop {
+        display: none;
     }
-    
-    &__container {
-      display: flex;
-      align-items: center;
-      @media screen and (max-width:767px) {
-        justify-content: space-between;
-      }
-    }
-    &__nav {
-      display: flex;
-      align-items: center;
-    }
-    &__link-logo {
-      text-decoration: none;
-      list-style-type: none;
-      margin-right: 93px;
-    }
-    &__logo-web {
-      font-family: "Raleway";
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      color: var(--blue-color);
-      text-decoration: none;
-    }
-    &__logo-studio {
-      font-family: "Raleway";
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      color: var(--brand-color);
-    }
-    &__menu-nav {
-      // DISPLAY NONE
-      display: none;
-      @include tablet {
-      list-style-type: none;
-      display: flex;
-      gap: 50px;
-      }
-    }
-    
-    &__link-nav {
-    position: relative;
-    display: block;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--brand-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-    &__link-nav:focus,
-    &__link-nav:hover {
-    color: var(--blue-color);
-  }
-    &__link-nav.current::after {
-      content: "";
-      display: block;
-      margin-bottom: -1px;
-      border-radius: 2px;
-      bottom: 0;
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      background-color: var(--blue-color);
-      opacity: 1;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__menu-contacts {
-      display: none;
-      @include tablet {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      list-style-type: none;
-      margin-left: 70px;
-      gap:10px;
-      }
-      @include desktop {
-      margin-left: auto;
-      align-items: center;
-      gap: 50px;
-      } 
-    }
-    
-    &__icon {
-      box-sizing: border-box;
-      fill: currentColor;
-      margin-right: 10px;
-      margin-bottom: 0;
-    }
-    &__link-contacts {
-      display: flex;
-      align-items: center;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: var(--gray-color);
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__link-contacts:focus,
-    &__link-contacts:hover,
-    &__icon:hover,
-    &__icon:focus{
-      color: var(--blue-color);
-  }
-  }
-  .current {
-    color: var(--blue-color);
-  }
+}
 
-  .header__button-open {
-    margin-left: auto;
-    padding: 12px 8px;
-    border: none;
-    background-color: #ffffff;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      fill: var(--blue-color);
-    }
-    @include tablet {
-      display: none;
-    }
-  }
-
-  // mobile menu  
-
-  .mob-menu {
-    z-index: 3;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 21px;
-    padding-bottom: 48px;
-    transform: translateY(0);
-    transition: opacity 250ms, visibility 250ms;
-    @include tablet {
-      display: none;
-    }
-  }
-  .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .mob-menu__close {
-    display: block;
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      fill: var(--blue-color);
-    }
-  }
-  .conteiner.spc-between {
+.header__nav {
+  display: none;
+  @include desktop {
     display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    overflow: auto;
-  }
-  .adress-menu {
-    margin-top: auto;
-  }
-  .mob__list-top:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  .mob__link-top {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #212121;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      color: var(--blue-color);
-    }
-    &.current {
-      color: var(--blue-color);
-    }
-  }
-  .mob__list-adress {
-    &:not(:last-child) {
-      margin-bottom: 32px;
-      margin-top: 20px;
-    }
-    &:last-child {
-      margin-bottom: 64px;
-    }
-  }
-  .mob__link-adress {
-    &.phone {
-      font-size: 34px;
-      line-height: 1.18;
-      letter-spacing: 0.02em;
-      color: #2196F3;
-      }
-    &.mail {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
-      color: #757575;
-    }
-  }
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+}
 
-  .mob__social {
+.header__nav-link {
+  text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    // НЕ ЗАБУДЬ ПОМЕНЯТЬ ЦВЕТ КНОПКИ !!!!!
+    color: #fff;
+}
+.header__button-shopnow {
+  display: none;
+  @include tablet {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .mob__list-social {
-    &:not(:last-child)::after {
-    content: '';
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    margin-left: 10px;
+    // button design
+    padding: 9px 18px;
+    gap: 10px;
+    width: 95px;
+    height: 40px;
+    left: 633px;
+    top: 56px;
+    // Поменятй цвет кнопки
+    background: yellowgreen;
+    border-radius: 16px;
+    text-decoration: none;
+    // text-style
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.58;
+    text-align: right;
+    letter-spacing: -0.03em;
+    // Поменятй цвет шрифта
+    color: black;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
     }
+    }
+}
+
+// Работа с кнопками
+
+.header__button-open .cross-line {
+  display: none;
+}
+
+.header__button-open.is-open .cross-line {
+  display: block;
+}
+
+.header__button-open.is-open .burger-line {
+  display: none;
+}
+
+
+// Mobile Menu
+
+.mob-menu {
+  position: fixed;
+  // top: 100%;
+  // Поменяй цвет на картинку!!!
+  background-color: yellow;
+  background-size: cover;
+  background-repeat: no-repeat;    
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  // Поменяй цвет на картинку!!!
+  @include retina {
+    background-color: orange;
   }
-  .mob__link-social {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: #2196F3;
+  @include tablet {
+    background-color: greenyellow;
+      @include retina {
+        background-color: green;
+      }
   }
+  @include desktop {
+    display: none;
+  }
+}
+
+.mob-menu.is-open {
+  transform: translateY(0);
+}
+
+.is-open {
+  display: block;
+}
+.mob-menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 64px;
+  @include tablet {
+      margin-top: 120px;
+        }
+}
+
+.mob-menu__nav-link {
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    text-transform: uppercase;
+    // Поменятй цвет шрифта
+    color: #fff;
+    @include tablet {
+        font-size: 32px;
+        line-height: 1.19;
+    }
+}
+
